@@ -1,4 +1,5 @@
 .join {
+  text-align: center;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
@@ -7,11 +8,35 @@
   color: var(--header-color-white);
 }
 .join-size {
-  min-width: 206px;
-  margin-left: 70px;
-  margin-right: 93px;
+  max-width: 206px;
 }
 
 .socials-networks-weight-icon {
   fill: var(--header-color-white);
+}
+
+@media (min-width: 480px) {
+  .join-size {
+    width: 206px;
+  }
+}
+
+@media (max-width: 767px) {
+  .join {
+    margin: 60px;
+  }
+  .join-size {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .join {
+    padding-top: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  .join-size {
+    margin-left: 70px;
+    margin-right: 93px;
+  }
 }

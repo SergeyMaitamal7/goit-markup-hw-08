@@ -4,6 +4,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  margin-top: 20px;
 }
 
 .address__item:not(:last-child) {
@@ -24,5 +25,27 @@
   &:active,
   &-location:active {
     color: var(--btn-color-blue);
+  }
+}
+
+@media (max-width: 767px) {
+  .width-adress {
+    margin: auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1199px) {
+  .width-adress {
+    margin-right: 115px;
+  }
+}
+@media (max-width: 1199px) {
+  .width-adress {
+    width: 232px;
+    text-align: center;
+  }
+}
+@media (min-width: 1200px) {
+  .width-adress {
+    min-width: 231px;
   }
 }
