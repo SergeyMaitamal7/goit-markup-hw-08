@@ -116,6 +116,9 @@ section {
   .container {
     width: 768px;
   }
+  .header__container {
+    padding-bottom: 0;
+  }
   .footer__container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
