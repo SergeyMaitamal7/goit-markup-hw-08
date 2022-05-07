@@ -1555,7 +1555,6 @@ section {
 
 .hero-title {
   display: block;
-  max-width: 360px;
   margin: 0 auto;
   font-weight: 900;
   font-size: 26px;
@@ -1572,7 +1571,7 @@ section {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1199px) {
   .hero-title {
     max-width: 360px;
   }
