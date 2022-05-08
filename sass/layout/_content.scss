@@ -4,7 +4,10 @@
   max-height: auto;
 }
 .content__item {
-  max-width: 449px;
+  width: 100%;
+}
+.content__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 .content__link {
   position: relative;
@@ -55,9 +58,6 @@
   .content__item {
     width: 450px;
   }
-  .content__item:not(:last-child) {
-    margin-bottom: 30px;
-  }
 }
 
 @media screen and (min-width: 768px) {
@@ -75,6 +75,11 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .content-div__first {
+    height: 147px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .content__item {
     width: calc((100% - 90px) / 3);
